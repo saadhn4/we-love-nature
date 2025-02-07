@@ -23,6 +23,11 @@ body {
 .nav .right ul li a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav .right ul li a:hover {
+  color: #000;
 }
 
 .nav {
@@ -48,6 +53,11 @@ body {
   border: 1px solid #fff;
   padding: 8px 13px;
   border-radius: 5px;
+}
+
+.number:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .content {
@@ -97,6 +107,19 @@ body {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.page-2 h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  /* Adjust width */
+  height: 3px;
+  /* Thickness */
+  background-color: red;
+  /* Line color */
+  margin: 5px auto;
+  /* Centers the line */
 }
 
 .row {
